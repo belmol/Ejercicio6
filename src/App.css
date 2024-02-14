@@ -5,38 +5,73 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.color-form {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex; /* Cambio para alinear elementos en fila */
+  align-items: center; /* Alinear elementos verticalmente */
 }
 
-.card {
-  padding: 2em;
+.color-form label {
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.color-form input {
+  width: 80px; /* Ancho del input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.color-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Espacio entre el input y el botón */
+}
+
+.color-form button:hover {
+  background-color: #0056b3;
 }
 
 .read-the-docs {
   color: #888;
+}
+.app-container {
+  max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Añade un espacio interno */
+}
+
+.color-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-form button {
+  align-self: flex-end;
+  margin-top: 10px; /* Agrega un margen superior para separarlo de los inputs */
 }
